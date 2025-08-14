@@ -169,17 +169,17 @@ sudo useradd employee
 
 ## Download the application code to /opt directory.
 ```
-sudo git clone https://github.com/Nareshindu/employee-code.git
+sudo git clone https://github.com/Nareshindu/Student-code.git
 ```
 
 ## Change the permission for project 
 ```
-sudo chown -R ec2-user:ec2-user /opt/employee-code
+sudo chown -R ec2-user:ec2-user /opt/Student-code
 ```
 ## Do changes in application.properties change the database IP address 
 
 ```
-sudo vi /opt/employee-code/Employee-project/src/main/resources/application.properties
+sudo vi /opt/Student-code/StudentManagementSystem/src/main/resources/application.properties
 ```
 ## change the IP address and if you want you can change username, password and database name also
 

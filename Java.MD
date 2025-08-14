@@ -186,8 +186,8 @@ sudo vi /opt/Student-code/StudentManagementSystem/src/main/resources/application
 Note: Edit these lines to match your database config:
 
 
-spring.datasource.url=jdbc:postgresql://172.31.34.229:5432/ptdb  (Database Server IP address):5432/student_details       
-spring.datasource.username=employee                              (Student_details Database Username)  
+spring.datasource.url=jdbc:postgresql://172.31.34.229:5432/student_details  (Database Server IP address):5432/student_details       
+spring.datasource.username=student                               (Student_details Database Username)  
 spring.datasource.password=Admin@123                             (Student_details Database Password)
 
 ## After changing the Database IP address you should build code you will change path where pom.xml file is located in this project under below path pom.xml file is there
@@ -201,7 +201,7 @@ mvn clean install
 ```
 ## We need to setup a new service in systemd so systemctl can manage this service
 
-Setup SystemD emplyee Backend Service
+Setup SystemD student Backend Service
 ```
 sudo vi /etc/systemd/system/backend.service
 ```
@@ -213,9 +213,8 @@ After=network.target
 [Service]
 User=ec2-user
 Group=ec2-user
-WorkingDirectory=/opt/employee-code/Employee-project
-ExecStart=/usr/bin/java -jar /opt/employee-code/Employee-project/target/EmployeeDetailsBoot.jar
-SuccessExitStatus=143
+WorkingDirectory=/opt/Student-code/StudentManagementSystem
+ExecStart=/usr/bin/java -jar /opt/Student-code/StudentManagementSystem/target/StudentManagementSystem-0.0.1-SNAPSHOT.jar
 Restart=always
 RestartSec=5
 SyslogIdentifier=java-backend
@@ -240,7 +239,7 @@ sudo systemctl start backend
 sudo systemctl status backend
 ```
 
-## Access this employee web-application in a browser
+## Access this student web-application in a browser
 **Note:** If you are using an EC2 instance, open your instance's **public IP address** in the browser to access the application. 
 For example, if your public IP is `18.234.229.147`, 
 

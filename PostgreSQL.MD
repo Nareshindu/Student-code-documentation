@@ -112,7 +112,7 @@ psql
 ---
 
 ### Create a New User  
-Creates a new PostgreSQL user named employee and assigns a secure password.  
+Creates a new PostgreSQL user named student and assigns a secure password.  
 (Use a strong one with letters, numbers, and symbols.)
 ```
 CREATE USER student WITH PASSWORD 'Admin@123';

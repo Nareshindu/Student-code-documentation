@@ -74,9 +74,9 @@ Find:
 `#listen_addresses = 'localhost'`
 
 Change to:
-```
+
 listen_addresses = '*'
-```
+
 ---
 
 ### Update pg_hba.conf to allow remote connections  

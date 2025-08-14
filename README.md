@@ -1,4 +1,4 @@
-# Employees Registration Web Application
+# Students Registration Web Application
 
 ## Deployment Instructions
 

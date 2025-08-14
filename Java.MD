@@ -181,7 +181,7 @@ sudo chown -R ec2-user:ec2-user /opt/Student-code
 ```
 sudo vi /opt/Student-code/StudentManagementSystem/src/main/resources/application.properties
 ```
-## change the IP address and if you want you can change username, password and database name also
+## change the IP address and if you want you can change username, password and database name also(Which Username and Password you have given when you are creating DB. Give those username and password only.)
 
 Note: Edit these lines to match your database config:
 

@@ -192,7 +192,7 @@ spring.datasource.password=Admin@123                             (Student_detail
 
 ## After changing the Database IP address you should build code you will change path where pom.xml file is located in this project under below path pom.xml file is there
 ```
-cd /opt/employee-code/Employee-project
+cd /opt/Student-code/StudentManagementSystem
 ```
 
 ## To delete old target directory and build the package after deleting again
@@ -287,5 +287,5 @@ You should see something like:
 ```
 psql -h ip-addr -U username -d dbname
 ```
-Example: psql -h 172.31.45.69 -U employee -d employee_details
+Example: psql -h 172.31.45.69 -U student -d student_details
 ---

@@ -120,7 +120,7 @@ CREATE USER student WITH PASSWORD 'Admin@123';
 ---
 
 ### Create a New Database  
-Creates a database called employee_details owned by the employee user.  
+Creates a database called student_details owned by the student user.  
 **Security tip**: Each app should have its own database and dedicated user.
 ```
 CREATE DATABASE student_details OWNER student;
@@ -151,7 +151,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO student;
 ---
 
 ### Grant Same Privileges on Future Tables  
-Ensures that any new tables created in the future also grant the same CRUD privileges to employee user.  
+Ensures that any new tables created in the future also grant the same CRUD privileges to student user.  
 Without this, future tables will not be accessible by default.
 ```
 ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO student;
@@ -166,13 +166,13 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT, INSERT, UPDATE, DELETE O
 \l
 ```
 
-### To connect the employee_details database:
+### To connect the student_details database:
 
 ```
 \c student_details
 ```
 
-### To list the tables in the employee_details database:
+### To list the tables in the student_details database:
 
 ```
 \dt
